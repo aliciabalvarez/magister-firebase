@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/27ce10cb04.js" crossorigin="anonymous"></script>
+
+    <title>Formulario prueba Magister</title>
+  </head>
+  <body>
+
+<form class="contact-form">
+    <div class="pag-inicio">
+      <img src="logo-magister.png" width="200px" alt="">
+      <h2>¡Comencemos con tu matrícula!</h2>
+      <h4>Para comenzar a especializarte, vamos a realizar unas preguntas para darte el mejor servicio</h4>
+      <div class="botones-pag-inicio">
+        <a class="btnComenzar">Comenzar</a>
+        <a class="btnVolverAtras" href="https://web.magister.com/">Volver atrás</a>
+      </div>
+    </div>
+
+
+    <div class="pag-especializar">
+      <div class="guia-especializar"></div>
+      <div class="info-pag-especializar">
+        <h2>¿En qué te quieres especializar?</h2>
+        <div class="form-rama-provincia">
+          <div>
+            <label>Rama</label> <br>
+            <span>(Selecciona una opción)</span> <br>
+            <select class="rama" id="rama" name="ramalist" form="ramalist">
+              <option value="">Elige Especialidad</option>
+
+              <option value="Artes y Humanidades">Artes y Humanidades</option>
+              <option value="Ciencias">Ciencias</option>
+              <option value="Ciencias de la Salud">Ciencias de la Salud</option>
+              <option value="Ciencias Sociales">Ciencias Sociales</option>
+              <option value="Jurídicas">Jurídicas</option>
+              <option value="Ingeniería">Ingeniería</option>
+              <option value="Arquitectura">Arquitectura</option>
+            </select>
+          </div>
+          <div>
+            <label>Provincia</label> <br>
+            <span>(Selecciona una opción)</span> <br>
+            <select class="provincia" id="provincia" name="provincialist" form="provincialist">
+              <option value="">Elige Provincia</option>
+              <option value="Álava/Araba">Álava/Araba</option>
+              <option value="Albacete">Albacete</option>
+              <option value="Alicante">Alicante</option>
+              <option value="Almería">Almería</option>
+              <option value="Asturias">Asturias</option>
+              <option value="Ávila">Ávila</option>
+              <option value="Badajoz">Badajoz</option>
+              <option value="Baleares">Baleares</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Burgos">Burgos</option>
+              <option value="Cáceres">Cáceres</option>
+              <option value="Cádiz">Cádiz</option>
+              <option value="Cantabria">Cantabria</option>
+              <option value="Castellón">Castellón</option>
+              <option value="Ceuta">Ceuta</option>
+              <option value="Ciudad Real">Ciudad Real</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Cuenca">Cuenca</option>
+              <option value="Gerona/Girona">Gerona/Girona</option>
+              <option value="Granada">Granada</option>
+              <option value="Guadalajara">Guadalajara</option>
+              <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+              <option value="Huelva">Huelva</option>
+              <option value="Huesca">Huesca</option>
+              <option value="Jaén">Jaén</option>
+              <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Las Palmas">Las Palmas</option>
+              <option value="León">León</option>
+              <option value="Lérida/Lleida">Lérida/Lleida</option>
+              <option value="Lugo">Lugo</option>
+              <option value="Madrid">Madrid</option>
+              <option value="Málaga">Málaga</option>
+              <option value="Melilla">Melilla</option>
+              <option value="Murcia">Murcia</option>
+              <option value="Navarra">Navarra</option>
+              <option value="Orense/Ourense">Orense/Ourense</option>
+              <option value="Palencia">Palencia</option>
+              <option value="Pontevedra">Pontevedra</option>
+              <option value="Salamanca">Salamanca</option>
+              <option value="Segovia">Segovia</option>
+              <option value="Sevilla">Sevilla</option>
+              <option value="Soria">Soria</option>
+              <option value="Tarragona">Tarragona</option>
+              <option value="Tenerife">Tenerife</option>
+              <option value="Teruel">Teruel</option>
+              <option value="Toledo">Toledo</option>
+              <option value="Valencia">Valencia</option>
+              <option value="Valladolid">Valladolid</option>
+              <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+              <option value="Zamora">Zamora</option>
+              <option value="Zaragoza">Zaragoza</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-antiguo-alumno">
+          <label>¿Has sido alumn@ de Magister?</label> <br>
+          <a class="enlace-consulta-cond">Consulta condiciones &nbsp <i class="fas fa-arrow-right"></i></a> <br>
+          <select class="antiguoalumno" id="antiguoalumno" name="antiguoalumnolist" form="antiguoalumnolist">
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+            <option value="Sí, después del 2007">Sí, después del 2007</option>
+          </select>
+        </div>
+        <div class="entrega-material">
+          <label>Entrega de material</label> <br>
+          <a class="enlace-consulta-cond">Consulta condiciones &nbsp <i class="fas fa-arrow-right"></i></a> <br> <br>
+          <a class="material-mesames">Material mes a mes</a>
+        </div>
+        <div class="botones">
+          <a class="btnSiguientePagespecializar btnSiguiente">Siguiente</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pag-horarioymodalidad">
+      <div class="guia-horarioymodalidad"></div>
+      <div class="info-pag-horarioymodalidad">
+        <h2>Elige el horario y modalidad que más te acomode</h2>
+        <div>
+          <label>Modalidad</label> <br>
+          <span>(Selecciona una opción)</span> <br>
+          <select class="modalidad" id="modalidad" name="modalidadlist" form="modalidadlist">
+            <option value="Presencial 2020/2021">Presencial 2020/2021</option>
+            <option value="Semipresencial 2020/2021">Semipresencial 2020/2021</option>
+            <option value="Videoconferencia en directo 2020/2021">Videoconferencia en directo 2020/2021</option>
+            <option value="Adaptación a la Lomloe">Adaptación a la Lomloe</option>
+          </select>
+          <br>
+        </div>
+        <div>
+          <label>Horario</label> <br>
+          <span>(Selecciona una opción)</span>
+          <br>
+          <select class="horario" id="horario" name="horariolist" form="horariolist">
+            <option value="Una clase al mes Práctica y Programación sábados mañana. Grupo 1 de 10 a 14">Una clase al mes Práctica y Programación sábados mañana. Grupo 1 de 10 a 14</option>
+            <option value="Una clase al mes Práctica y Programación sábados tarde. Grupo 2 de 15 a 20">Una clase al mes Práctica y Programación sábados tarde. Grupo 2 de 15 a 14</option>
+            <option value="Una clase al mes Práctica y Programación domingos mañana. Grupo 3 de 10 a 14">Una clase al mes Práctica y Programación domingos mañana. Grupo 3 de 10 a 14</option>
+          </select>
+        </div>
+        <div class="botones">
+          <div>
+            <p class="btnSiguiente btnSiguientePaghorarioymodalidad">Siguiente</p>
+          </div> 
+          <div>
+            <p class="btnVolver btnVolverAtrasPaghorarioymodalidad">Volver atrás</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pag-tarifa">
+      <div class="guia-tarifa"></div>
+      <div class="info-pag-tarifa">
+        <div>
+          <h2>Selecciona tu tarifa</h2> 
+        <label>Tarifas</label> <br>
+        <span>(Selecciona una opción)</span> <br>
+        <select class="tarifa" id="tarifa" name="tarifalist" form="tarifalist">
+          <option value="Inicio febrero 2021. Nuevo alumno SEMIPRESENCIAL - Material mes a mes - Matrícula 101,00 euros">Inicio febrero 2021. Nuevo alumno SEMIPRESENCIAL - Material mes a mes - Matrícula 101,00 euros</option>
+          <option value="Inicio febrero 2021. Nuevo alumno SOLO MENSUALIDAD - Material mes a mes - Matrícula 115,00 euros">Inicio febrero 2021. Nuevo alumno SOLO MENSUALIDAD - Material mes a mes - Matrícula 115,00 euros</option>
+          <option value="Inicio febrero 2021. Nuevo alumno SEMIPRESENCIAL - Material mes a mes + Matrícula - Matrícula 216,00 euros">Inicio febrero 2021. Nuevo alumno SEMIPRESENCIAL - Material mes a mes + Matrícula - Matrícula 216,00 euros</option>
+        </select>
+
+        <div class="botones">
+          <div>
+            <p class="btnSiguiente btnSiguientePagTarifa">Siguiente</p>
+          </div>
+          <div>
+            <p class="btnVolver btnVolverAtrasPagTarifa">Volver atrás</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+
+    <div class="pag-datospersonales">
+      <div class="guia-datospersonales"></div>
+      <div class="info-pag-datospersonales">
+        <div class="ochenta">
+          <h2>Tus datos personales</h2>
+        <label for="">Nombre completo</label><br />
+      <input class="name" type="text" placeholder="Ej. Alicia Barroso Álvarez" /><br />
+        <div class="form-datospersonales">
+          <div>
+            <label>DNI - NIE</label>
+            <input class="dni" type="text" name=tel placeholder="Ej. 52451587E" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" />
+          </div>
+          <div>
+            <label>Móvil</label>
+            <input class="telefono" type="tel" placeholder="Ej. 658748545" pattern="[0-9]{9}" title="Introduzca su número de teléfono de 9 dígitos, sin guiones ni espacios">
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="text" class="email" type="email" placeholder="Ej. alicia.bar.alv@gmail.com">
+          </div>
+        </div>
+        <div class="botones">
+          <div>
+            <p class="btnSiguiente btnSiguientePagDatosPersonales">Siguiente</p>
+          </div>
+          <div>
+            <p class="btnVolver btnVolverAtrasPagDatosPersonales">Volver atrás</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pag-direccion">
+      <div class="guia-direccion"></div>
+      <div class="info-pag-direccion">
+        <div class="ochenta">
+          <h2>Tu dirección</h2>
+        <label>Comunidad de Exámen</label> <br>
+        <span>(Selecciona una opción)</span> <br>
+        <select class="comunidadexamen" id="comunidadexamen" name="comunidadexamenlist" form="comunidadexamenlist">
+          <option value="Madrid">Madrid</option>
+          <option value="Castilla y León">Castilla y León</option>
+          <option value="Castilla La Mancha">Castilla La Mancha</option>
+        </select>
+        <br>
+        <label>Dirección</label> <br>
+        <input type="text" class="direccion" placeholder="Ej. Calle Ramiro de Maxtu, 10, 4D">
+
+        <div class="form-direccion">
+          <div>
+            <label>Localidad</label>
+            <input type="text" class="localidad" placeholder="Ej. Madrid">
+          </div>
+          <div>
+            <label>Provincia</label>
+            <input type="text" class="provinciaresidencia" placeholder="Ej. Madrid">
+          </div>
+          <div>
+            <label>Código Postal</label>
+            <input class="codigopostal" type="tel" placeholder="Ej. 28040" pattern="[0-9]{5}" title="Introduzca su código postal">
+          </div>
+        </div>
+
+        <div class="form-direccion-privacidad">
+          <input type="checkbox" name="" id=""> Acepto la información legal
+          <input type="checkbox" name="" id=""> Acepto la protección de datos
+        </div>
+
+        <div class="botones">
+          <div>
+            <p class="btnSiguiente btnSiguientePagDireccion">Siguiente</p>
+          </div>
+          <div>
+            <p class="btnVolver btnVolverAtrasPagDireccion">Volver atrás</p>
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="pag-pago">
+      <div class="guia-pago"></div>
+      <div class="info-pag-pago">
+        <div class="ochenta">
+          <h2>Forma de pago</h2>
+        <label>¿Cómo prefieres abonar tu primer pago?</label> <br>
+        <a class="enlace-consulta-cond">Detalles sobre forma de pago y proceso post pago  &nbsp <i class="fas fa-arrow-right"></i></a>
+        
+        <select class="pago" id="pago" name="pagolist" form="pagolist">
+          <option value="Tarjeta de crédido/débido">Tarjeta de crédido/débido (recomendado) </option>
+          <option value="Transferencia bancaria">Transferencia bancaria</option>
+        </select> 
+        
+        
+        <label>¿Vienes recomendado por alguien?</label>
+        <select class="recomendado" id="recomendado" name="recomendadolist" form="recomendadolist">
+          <option value="Sí">Sí</option>
+          <option value="No">no</option>
+        </select>
+
+        <br>
+        <a class="enlace-consulta-cond">Ver información legal  &nbsp <i class="fas fa-arrow-right"></i></a>
+
+        <div class="botones">
+          <div>
+            <button type="submit" class="btnEnviar">Enviar</button>
+          </div>
+          <div>
+            <p class=" btnVolver btnVolverAtrasPagPago">Volver atrás</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="pag-final">
+    <img src="logo-magister.png" width="200px" alt="">
+      <h2>¡Gracias! <br>Tu reserva está en proceso</h2>
+      <h4>La matrícula sólo será efectiva una vez se haya recibido el Pago por Tarjeta o Transferncia</h4>
+      <div class="botones-pag-inicio">
+        <a class="btnComenzar" href="https://web.magister.com/">Volver a Home</a>
+        
+  </div>
+
+
+    
+     
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script> utilizamos en caso de querer autentificación de usuarios (correo electrónico)--> 
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    
+    <!-- configuración de firebase con datos personales -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDETDtA4kAXRNzzuG2BRXJxGfe3Q44-95c",
+        authDomain: "usuarios-3b416.firebaseapp.com",
+        projectId: "usuarios-3b416",
+        storageBucket: "usuarios-3b416.appspot.com",
+        messagingSenderId: "360730952546",
+        appId: "1:360730952546:web:6f8533193a74e3c00d223b"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script>
+
+      // botón comenzar (primera página)
+      document.querySelector(".btnComenzar").addEventListener("click",function(){
+        document.querySelector(".pag-inicio").style.display = "none"
+        document.querySelector(".pag-especializar").style.display = "flex"
+      })
+
+      // botón siguiente (página: ¿En que te quieres especializar?)
+      document.querySelector(".btnSiguientePagespecializar").addEventListener("click",function(){
+        document.querySelector(".pag-especializar").style.display = "none"
+        document.querySelector(".pag-horarioymodalidad").style.display = "flex"
+      })
+
+      // botón volver atrás (página: horario y modalidad)
+      document.querySelector(".btnVolverAtrasPaghorarioymodalidad").addEventListener("click",function(){
+        document.querySelector(".pag-especializar").style.display = "flex"
+        document.querySelector(".pag-horarioymodalidad").style.display = "none"
+      })
+
+      // botón siguiente (página: horario y modalidad)
+      document.querySelector(".btnSiguientePaghorarioymodalidad").addEventListener("click",function(){
+        document.querySelector(".pag-horarioymodalidad").style.display = "none"
+        document.querySelector(".pag-tarifa").style.display = "flex"
+      })
+      // botón siguiente (página: tarifa)
+      document.querySelector(".btnSiguientePagTarifa").addEventListener("click",function(){
+        document.querySelector(".pag-tarifa").style.display = "none"
+        document.querySelector(".pag-datospersonales").style.display = "flex"
+      })
+      // botón volver atrás (página: tarifa)
+      document.querySelector(".btnVolverAtrasPagTarifa").addEventListener("click",function(){
+        document.querySelector(".pag-tarifa").style.display = "none"
+        document.querySelector(".pag-horarioymodalidad").style.display = "flex"
+      })
+
+      // botón siguiente (página: datospersonales)
+      document.querySelector(".btnSiguientePagDatosPersonales").addEventListener("click",function(){
+        document.querySelector(".pag-datospersonales").style.display = "none"
+        document.querySelector(".pag-direccion").style.display = "flex"
+      })
+      // botón volver atrás (página: datospersonales)
+      document.querySelector(".btnVolverAtrasPagDatosPersonales").addEventListener("click",function(){
+        document.querySelector(".pag-datospersonales").style.display = "none"
+        document.querySelector(".pag-tarifa").style.display = "flex"
+      })
+
+
+      // botón siguiente (página: direccion)
+      document.querySelector(".btnSiguientePagDireccion").addEventListener("click",function(){
+        document.querySelector(".pag-direccion").style.display = "none"
+        document.querySelector(".pag-pago").style.display = "flex"
+      })
+      // botón volver atrás (página: direccion)
+      document.querySelector(".btnVolverAtrasPagDireccion").addEventListener("click",function(){
+        document.querySelector(".pag-direccion").style.display = "none"
+        document.querySelector(".pag-datospersonales").style.display = "flex"
+      })
+
+
+      // botón volver atrás (página: pago)
+      document.querySelector(".btnVolverAtrasPagPago").addEventListener("click",function(){
+        document.querySelector(".pag-pago").style.display = "none"
+        document.querySelector(".pag-direccion").style.display = "flex"
+      })
+
+      // botón enviar
+      document.querySelector(".btnEnviar").addEventListener("click",function(){
+        document.querySelector(".pag-pago").style.display = "none"
+        document.querySelector(".pag-final").style.display = "block"
+      })
+      
+
+
+
+    //Conseguimos la fecha y hora 
+      function textoFecha(fecha){
+          var numDiaSem = fecha.getDay();
+          var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+          var diaLetras = diasSemana[fecha.getDay()];
+          var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+          var mesLetras = meses[fecha.getMonth()];
+          var diaMes = (fecha.getDate());
+          var anho = fecha.getFullYear();
+          var hora = fecha.getHours();
+          var min = fecha.getMinutes();
+          var sec = fecha.getSeconds();
+          if ((min >= 0) && (min < 10)) {
+            min = "0" + min;
+          }
+          var devolver = diaLetras+ ", " + diaMes + " de " + mesLetras + " de " + anho + ", " + hora + ":" + min + ":" + sec;
+          return devolver;
+        }
+        var fecha = new Date();
+
+        // document.write(textoFecha(new Date)); PARA ESCRIBIR EN LA PANTALLA LA FECHA Y HORA REAL 
+
+      // Referencia a colección "Matriculaciones"
+      let contactInfo = firebase.database().ref("Matriculaciones");
+
+
+      // Selecciona el botón para funcionar
+      document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+      //FUNCIÓN - Enviar formulario
+      function submitForm(e) {
+        e.preventDefault();
+
+        // Asignamos nombre a los valores de los inputs para más adelante
+        let name = document.querySelector(".name").value;
+        let email = document.querySelector(".email").value;
+        let telefono = document.querySelector(".telefono").value;
+        let provincia = document.querySelector(".provincia").value;
+        let rama = document.querySelector(".rama").value;
+        let antiguoalumno = document.querySelector(".antiguoalumno").value;
+        let modalidad = document.querySelector(".modalidad").value;
+        let horario = document.querySelector(".horario").value;
+        let tarifa = document.querySelector(".tarifa").value;
+        let dni = document.querySelector(".dni").value;
+        let comunidadexamen = document.querySelector(".comunidadexamen").value;
+        let localidad = document.querySelector(".localidad").value;
+        let direccion = document.querySelector(".direccion").value;
+        let provinciaresidencia = document.querySelector(".provinciaresidencia").value;
+        let codigopostal = document.querySelector(".codigopostal").value;
+        let pago = document.querySelector(".pago").value;
+        let recomendado = document.querySelector(".recomendado").value;
+
+        console.log(name, email, telefono, provincia, rama, antiguoalumno, modalidad, horario, tarifa, dni, comunidadexamen, direccion, localidad, provinciaresidencia, codigopostal, pago, recomendado, new Date);
+
+        //ejecutar función de "guardar info en Firebase"
+        saveContactInfo(name, email, telefono, provincia, rama, antiguoalumno, modalidad, horario, tarifa, dni, comunidadexamen, direccion, localidad, provinciaresidencia, codigopostal, pago, recomendado, fecha);
+        textoFecha(fecha);
+
+        // limpiar el formulario para la próxima matriculación
+        document.querySelector(".contact-form").reset();
+
+      }
+
+      // FUNCIÓN - Guardar la información a Firebase
+      function saveContactInfo(name, email, telefono, provincia, rama, antiguoalumno, modalidad, horario, tarifa, dni, comunidadexamen, direccion, localidad, provinciaresidencia, codigopostal, pago, recomendado) {
+
+        let newContactInfo = contactInfo.push();
+
+        newContactInfo.set({
+          name: name,
+          email: email,
+          telefono: telefono,
+          // message: message,
+          fecha: textoFecha(new Date),
+          provincia: provincia,
+          rama: rama,
+          antiguoalumno: antiguoalumno,
+          modalidad: modalidad,
+          horario: horario,
+          tarifa: tarifa,
+          dni: dni,
+          comunidadexamen: comunidadexamen,
+          direccion: direccion,
+          localidad: localidad,
+          provinciaresidencia: provinciaresidencia,
+          codigopostal: codigopostal,
+          pago: pago,
+          recomendado: recomendado,
+        });
+
+      }
+
+
+    </script>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>

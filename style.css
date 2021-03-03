@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inter;
+  font-weight: normal;
+  background: rgb(245, 245, 245);
+  font-family: 'Poppins', sans-serif;
+}
+h2{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  color: #505050;
+}
+label{
+  color: #505050;
+  font-weight: 600;
+}
+span{
+  color: #505050;
+  font-weight: 100;
+  font-size: 15px;
+}
+.form-rama-provincia select{
+  padding: 10px;
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 90%;
+  
+}
+.form-rama-provincia div{
+  width: 50%;
+}
+.form-antiguo-alumno{
+  margin: 10px;
+}
+.material-mesames{
+  background-color: #88b1b5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #2e2e5d;
+  font-weight: 400;
+}
+.botones{
+  text-align: center;
+}
+.botones a{
+  position: relative;
+  bottom: -10vh;
+}
+.btnSiguiente{
+  background-color: #2196f3;
+  color: white;
+  padding: 6px 50px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 15vh;
+}
+.btnSiguiente:hover{
+  background-color: rgb(226, 226, 226);
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btnVolver{
+  font-weight: 600;
+    font-size: 13px;
+    color: #25c6e8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btnVolver:hover{
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.info-pag-horarioymodalidad div{
+  width: 80%;
+  margin: auto;
+}
+select, input{
+  padding: 10px;
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 200px;
+}
+input{
+  border: 1px grey solid;
+}
+.enlace-consulta-cond{
+  font-weight: 600;
+    font-size: 15px;
+    color: #00d2ff;
+}
+
+.pag-inicio{
+  background-color: #31316e;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  
+  color: white;
+}
+.pag-inicio img{
+  margin-top: 20vh;
+}
+.pag-inicio h2{
+  margin-top: 6vh;
+    margin-bottom: 4vh;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.pag-inicio h4{
+    margin: 0 38%;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+}
+.botones-pag-inicio{
+  margin-top: 15vh;
+  display: inline-grid;
+}
+.btnComenzar{
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 6px 50px;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+
+}
+.btnComenzar:hover{
+  background-color: rgb(226, 226, 226);
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btnVolverAtras{
+  color: #2196f3;
+    transition: 0.5s;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btnVolverAtras:hover{
+  color: rgb(23, 0, 59);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pag-especializar{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.guia-especializar{
+  background-image: url("guia-especializar.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.info-pag-especializar{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+
+.info-pag-especializar h4{
+  padding-top: 20px;
+}
+.form-rama-provincia{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.form-antiguo-alumno{
+  width: 80%;
+  margin: 0 auto;
+}
+.entrega-material{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pag-horarioymodalidad{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.guia-horarioymodalidad{
+  background-image: url("guia-horario.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.info-pag-horarioymodalidad{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+.guia-tarifa{
+  background-image: url(guia-tarifa.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.pag-tarifa{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.info-pag-tarifa{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+.info-pag-tarifa div{
+  width: 80%;
+  margin: auto;
+}
+.info-pag-tarifa .btnSiguiente{
+  margin-top: 34vh;
+}
+.form-datospersonales{
+  display: flex;
+  justify-content: space-between;
+}
+.guia-datospersonales{
+  background-image: url("guia-datospersonales.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.pag-datospersonales{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.info-pag-datospersonales .btnSiguiente{
+  margin-top: 23vh;
+}
+.info-pag-datospersonales{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+.ochenta{
+  width: 80%;
+  margin: auto;
+}
+.form-direccion{
+  display: flex;
+  justify-content: space-between;
+}
+.guia-direccion{
+  background-image: url("guia-direccion.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.pag-direccion{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.info-pag-direccion{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+.info-pag-direccion .btnSiguiente{
+  margin-top: 0vh;
+}
+.info-pag-direccion input, select{
+  width: 100%;
+}
+.form-direccion input, select{
+  width: 95%;
+}
+.form-direccion-privacidad{
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+.form-direccion-privacidad input{
+  width: 30px;
+  margin-top: 2px;
+}
+.guia-pago{
+  background-image: url("guia-pago.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100vh;
+}
+.pag-pago{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.info-pag-pago{
+  width: 70%;
+  height: 100vh;
+  background-color: white;
+}
+.info-pag-pago .btnEnviar{
+  background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    font-size: 17px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 17vh;
+}
+.btnEnviar:hover{
+  background-color: rgb(226, 226, 226);
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pag-final{
+  background-color: #31316e;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: none;
+}
+.pag-final img{
+  margin-top: 20vh;
+}
+.pag-final h2{
+  margin-top: 6vh;
+    margin-bottom: 4vh;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.pag-final h4{
+    margin: 0 38%;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+}
+.botones-pag-final{
+  margin-top: 15vh;
+  display: inline-grid;
+}
+.pag-final a{
+  text-decoration: none;
+}
